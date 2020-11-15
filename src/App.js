@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Hello from './Hello';
+import Room from './Room';
 
 function App({name, age}) {
   return (
@@ -11,6 +12,7 @@ function App({name, age}) {
           Edit <code>src/App.js</code> and save to reload by {name} & {age}
           <br/>
           <Hello firstname="Kashif Hussain"></Hello>
+          <Room></Room>
         </div>
         <a
           className="App-link"
