@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import PChild from './PChild'
 function Parent(props) {
     return (
