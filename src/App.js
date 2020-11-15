@@ -2,8 +2,11 @@ import logo from './logo.svg';
 import './App.css';
 import Hello from './Hello';
 import Room from './Room';
+import Parent from './Parent';
+import React, {useState} from 'react';
 
 function App({name, age}) {
+let [number, setNumber] = useState(100);
   return (
     <div className="App">
       <header className="App-header">
@@ -13,6 +16,8 @@ function App({name, age}) {
           <br/>
           <Hello firstname="Kashif Hussain"></Hello>
           <Room></Room>
+          <Parent num={number}></Parent>
+          <button onClick={()=>{setNumber(++number)}}>Update Numbers</button>
         </div>
         <a
           className="App-link"
