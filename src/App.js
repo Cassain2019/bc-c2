@@ -4,10 +4,13 @@ import Hello from './Hello';
 import Room from './Room';
 import Parent from './Parent';
 import React, {useState} from 'react';
+import ValueContext from './ValueContext';
 
 function App({name, age}) {
 let [number, setNumber] = useState(100);
+let abc1 = useState(4500);
   return (
+    <ValueContext.Provider value={abc1}>
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -29,6 +32,7 @@ let [number, setNumber] = useState(100);
         </a>
       </header>
     </div>
+    </ValueContext.Provider>
   );
 }
 
